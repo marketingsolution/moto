@@ -8,7 +8,7 @@ const context = {
         image: 'images/12.03.20-bosch-kawasaki/bosch_aras_kawasaki_green.jpg',
         
         lead: 'Kawasaki Heavy Industries, Ltd has announced that the advanced rider assistance system developed by the Bosch company is to be included in future Kawasaki motorcycles - a first for a Japanese motorcycle manufacturer.',
-        link: '/news/kawasaki-first-motorcycle-manufacturet-with-bosch-advanced-rider-assistance-system.php'
+        link: 'kawasaki-first-motorcycle-manufacturet-with-bosch-advanced-rider-assistance-system.php'
       },
       {
         title: 'Nowa Yamaha FJR1300AS i FJR1300AE ultimate edition 2020 r',
