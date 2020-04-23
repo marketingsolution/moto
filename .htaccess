@@ -1,0 +1,36 @@
+# Deny all:
+
+Order deny,allow
+deny from all
+
+# Just in case - localhost and IP
+
+
+
+#
+# Since cloudflare 'hides' the original IP address, and Apache does
+# not understand X-FORWARDED-FOR, we do this slightly different:
+#
+
+allow from env=allow
+
+#
+# Deny access to the htaccess file:
+#
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# Events page filtering uses this file
+<Files admin-ajax.php>
+order deny,allow
+allow from all
+</Files>
+
+# Used to load style sheet for login page for partner portal
+<Files load-styles.php>
+order deny,allow
+allow from all
+</Files>
