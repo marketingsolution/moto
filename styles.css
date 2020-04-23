@@ -75,20 +75,11 @@
   }
 #logo{
     width:120px;
-    transition: .3s ease-out;
-    animation-name: logo ;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
 }
 #logo:hover {
     box-shadow: 0px 0px 10px 2px #EB9000;
 }
 
-@keyframes logo{
-    from {transform: scale(0,5); }
-    to {transform: scale(1); }
-}
 
   nav ul {
 	list-style-type: none;
@@ -228,7 +219,7 @@ h3{
    
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -311,28 +302,10 @@ background-color: #E9b000;
    
 }
 
-#featured-img {
-    
-    background: url("/images/12.03.20-bosch-kawasaki/bosch_aras_kawasaki_green.jpg");
-    
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 7px;
-    width: 540px;
-    min-width: 350px;
-    height: 360px;
-    margin:7px;
-    text-align: center;
-    
-    flex: 2 1 400px;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    
-    
-}
+
 
 #featured-description{
-    width: 505px;
+    max-width: 545px;
     height: auto;
     margin:7px;
     
@@ -355,23 +328,22 @@ background-color: #E9b000;
     max-width: 1090px;
 }
 .news-link{
-    background-color: rgba(255, 255, 255, 0.08);
     max-width:700px;
     align-items: flex-start;
-    
-   
     align-items: center;
     flex: 2 4 449px;
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
+    text-decoration: none;
+    margin: 10px 5px;
 }
 .news-post {
     background-color: rgba(255, 255, 255, 0.08);
-    max-width:700px;
+    max-width:540px;
     align-items: flex-start;
     padding: 20px 20px 20px 10px;
-    margin: 10px 5px;
+    margin: 0 auto;
     border-radius: 7px;
     align-items: center;
     flex: 2 4 449px;
@@ -382,6 +354,25 @@ background-color: #E9b000;
 
 .news-post:hover {
     box-shadow: 0px 0px 10px 2px #EB9000;
+}
+
+#featured-img {
+    
+       
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 7px;
+    max-width: 540px;
+    min-width: 350px;
+    max-height: 360px;
+    margin:7px;
+    text-align: center;
+    
+    flex: 2 1 200px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    
+    
 }
 
 .news-img{

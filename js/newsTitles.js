@@ -1,7 +1,19 @@
 const context = {
-    title: 'Welcome to Musicon',
-    body: 'Musicon is a budding musical storefront with a mission to share the joy of music. These magnificent auditory tools are designed with musical creators, like you, in mind. Hobbyists, beginners, and experts alike can appreciate the resplendent sounds supplied by each and every instrument we carry. Join us in delivering the euphoric vibrations of melodia to the citizens of the world!',
+    featured: {
+      image: 'images/4.04.20-bmw-f900xr/BMW_F900_R.jpg',
+      title: 'News from BMW Motorrad F 900 R and F 900 XR',
+      body: 'With the new Dynamic Roadster F 900 R and the F 900 XR in the Adventure Sport segment, BMW Motorrad is further expanding its product range for the popular mid-range. Both models offer sporty riding fun, straightforward handling and a unique range of equipment options, packaged to offer attractive value for money. Based on a powerful shared backbone, the two models differ significantly in terms of character and positioning.',
+      link: 'bmw-f-900-r-and-f-900-xr.php',
+    },
     news: [
+      {
+        title: 'News from BMW Motorrad F 900 R and F 900 XR',
+        date:'4th April 2020',
+        image: 'images/4.04.20-bmw-f900xr/BMW_F900_R.jpg',
+        
+        lead: 'With the new Dynamic Roadster F 900 R and the F 900 XR in the Adventure Sport segment, BMW Motorrad is further expanding its product range for the popular mid-range. Both models offer sporty riding fun, straightforward handling and a unique range of equipment options, packaged to offer attractive value for money. Based on a powerful shared backbone, the two models differ significantly in terms of character and positioning.',
+        link: 'bmw-f-900-r-and-f-900-xr.php'
+      },
       {
         title: 'Kawasaki Include Bosch’s Advanced Rider Assistance System',
         date:'13th March 2020',
@@ -15,7 +27,8 @@ const context = {
         date:'18th February 2020',
         image: 'images/2020_Yamaha_FJR130_0AS_EU-2-min.jpg',
         
-        lead: 'A piano welcomed to the 21th century. Pianists celebrate the compact form factor and the diversity of synthesized rhythms all in one masterful musical machine.',
+        lead: "Yamaha's Sport Touring models are a truly diverse line up of motorcycles from 700cc to 1300cc - each with its own special character and distinct style - the new season's line up opens up endless possibilities on the Roads of Life.",
+        link: 'yamaha-2020-sport-touring.php'
       },
       {
         title: 'Honda Africa Twin 2020',
@@ -29,7 +42,8 @@ const context = {
         date:'12 January 2020',
         image: 'images/2020_HONDA_NC750X.jpg',
         
-        lead: 'A piano welcomed to the 21th century. Pianists celebrate the compact form factor and the diversity of synthesized rhythms all in one masterful musical machine.',
+        lead: 'Honda’s ultimate commuting motorcycle wears a tough, adventure look and features a torque-laden parallel twin engine, long travel suspension, internal storage compartment, LED lighting and LCD instruments with personalised colour options. ',
+        link: '2020-honda-nc750x.php'
       },
      
       
@@ -39,4 +53,4 @@ const context = {
   const templateSource = templateElement.innerHTML
   const template = Handlebars.compile(templateSource);
   const compiledHtml = template(context);
-  document.getElementById('news-list').innerHTML = compiledHtml;
+  document.getElementById('news').innerHTML = compiledHtml;
