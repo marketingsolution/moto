@@ -336,17 +336,17 @@ background-color: #E9b000;
     flex-wrap: nowrap;
     overflow: auto;
     text-decoration: none;
-    margin: 10px 5px;
+    margin: 0 5px;
 }
 .news-post {
     background-color: rgba(255, 255, 255, 0.08);
     max-width:540px;
     align-items: flex-start;
     padding: 20px 20px 20px 10px;
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 7px;
     align-items: center;
-    flex: 2 4 449px;
+    flex-basis: 449px;
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
@@ -356,18 +356,17 @@ background-color: #E9b000;
     box-shadow: 0px 0px 10px 2px #EB9000;
 }
 
-#featured-img {
+#news-featured-img {
     
-       
+
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 7px;
-    max-width: 540px;
+    width: 540px;
     min-width: 350px;
-    max-height: 360px;
+    height: 360px;
     margin:7px;
     text-align: center;
-    
-    flex: 2 1 200px;
+    flex: 2 1 400px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -499,6 +498,18 @@ font-size: 16px;
         max-width: 1090px;
         
      }
+
+     #news-featured-img {
+
+        width: 400px;
+      
+    }
+
+    .cover-bg {
+       
+        min-height: 250px;
+        
+    }
     
     }
 /* POSTY */ 
@@ -545,3 +556,4 @@ font-size: 16px;
         background-size: cover;
     }
   
+ 

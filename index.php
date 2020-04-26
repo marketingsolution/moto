@@ -127,9 +127,9 @@ echo $header;
                 
             
             <div class="flex" id="featured-news">
-                <a href="/news{{featured.link}}">
-                    <div>
-                            <img id="featured-img" src="{{featured.image}}"/>
+                <a href="/news/{{featured.link}}">
+                    <div id="news-featured-img">
+                           
                     </div>
                 </a>
                     
@@ -138,7 +138,7 @@ echo $header;
                             <h2>{{featured.title}}</h2>
                             <p>{{featured.body}}
                             </p>
-                            <a href="/news{{featured.link}}"><button>Enter</button></a>
+                            <a href="/news/{{featured.link}}"><button>Enter</button></a>
 
                             
 

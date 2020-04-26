@@ -1,19 +1,12 @@
 const context = {
     featured: {
-      image: 'images/4.04.20-bmw-f900xr/BMW_F900_R.jpg',
+      image: "url('images/4.04.20-bmw-f900xr/BMW_F900_R.jpg')",
       title: 'News from BMW Motorrad F 900 R and F 900 XR',
       body: 'With the new Dynamic Roadster F 900 R and the F 900 XR in the Adventure Sport segment, BMW Motorrad is further expanding its product range for the popular mid-range. Both models offer sporty riding fun, straightforward handling and a unique range of equipment options, packaged to offer attractive value for money. Based on a powerful shared backbone, the two models differ significantly in terms of character and positioning.',
       link: 'bmw-f-900-r-and-f-900-xr.php',
     },
     news: [
-      {
-        title: 'News from BMW Motorrad F 900 R and F 900 XR',
-        date:'4th April 2020',
-        image: 'images/4.04.20-bmw-f900xr/BMW_F900_R.jpg',
-        
-        lead: 'With the new Dynamic Roadster F 900 R and the F 900 XR in the Adventure Sport segment, BMW Motorrad is further expanding its product range for the popular mid-range. Both models offer sporty riding fun, straightforward handling and a unique range of equipment options, packaged to offer attractive value for money. Based on a powerful shared backbone, the two models differ significantly in terms of character and positioning.',
-        link: 'bmw-f-900-r-and-f-900-xr.php'
-      },
+      
       {
         title: 'Kawasaki Include Bosch’s Advanced Rider Assistance System',
         date:'13th March 2020',
@@ -54,3 +47,4 @@ const context = {
   const template = Handlebars.compile(templateSource);
   const compiledHtml = template(context);
   document.getElementById('news').innerHTML = compiledHtml;
+ document.getElementById('news-featured-img').style.backgroundImage = context.featured.image;

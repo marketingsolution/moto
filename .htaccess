@@ -1,7 +1,4 @@
-# Deny all:
 
-Order deny,allow
-deny from all
 
 # Just in case - localhost and IP
 
